@@ -1,5 +1,5 @@
 
-const proxyUrl = "https://veltrixai-proxy.vercel.app/chat";
+const proxyUrl = "https://veltrixai-proxy.vercel.app/api/chat";
 const chatContainer = document.getElementById('chat-container');
 
 async function sendMessage() {
