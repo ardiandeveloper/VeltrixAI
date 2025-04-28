@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeltrixAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="splash.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <div id="splash-screen">
+    <img src="logo.png" alt="VeltrixAI Logo" class="splash-logo">
+    <h1 class="typing">Welcome to VeltrixAI</h1>
+  </div>
+  <main id="chat-container" style="display:none"></main>
+  <footer>
+    <input type="file" id="file-input" style="display:none">
+    <button onclick="document.getElementById('file-input').click()">Upload Gambar</button>
+    <input type="text" id="user-input" placeholder="Ketik pesan..." autocomplete="off">
+    <button onclick="sendMessage()">Kirim</button>
+  </footer>
+<script src="app.js"></script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('splash-screen').style.display = 'none';
+    document.getElementById('chat-container').style.display = 'block';
+  }, 3000);
+});
+</script>
+</body>
+</html>
